@@ -99,7 +99,7 @@ gulp.task('copy', function() {
 });
 
 
-gulp.task('watch' function(){
+gulp.task('watch', function(){
 
       // watch for HTML changes
   gulp.watch('./src/*.html', function() {
