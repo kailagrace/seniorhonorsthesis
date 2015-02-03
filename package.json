@@ -1,0 +1,28 @@
+{
+  "name": "seniorhonorsthesis",
+  "version": "1.0.0",
+  "description": "My Senior Honors Thesis Project: A culmination of my undergraduate degree in Human-computer interaction. Incorporates full service web design and development services for client (UConn Health). Includes work in branding, user-experience design, digital and graphic design, illustration, and web development. Author: Kaila Manca <ul> A guide to the file structure: \t<li><ul>documentation (a folder full of content not displayed in site development)  \t<li>timeline.ai & timeline.pdf (Thesis timeline) </li> \t<li>research (Thesis research documentation)</li>  \t</ul></li> <li>src </li> <li>build  </li> </ul>",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kailagrace/seniorhonorsthesis.git"
+  },
+  "author": "Kaila Manca, kailagrace",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kailagrace/seniorhonorsthesis/issues"
+  },
+  "homepage": "https://github.com/kailagrace/seniorhonorsthesis",
+  "devDependencies": {
+    "browser-sync": "^2.0.0-rc4",
+    "gulp": "^3.8.10",
+    "gulp-livereload": "^3.7.0",
+    "gulp-rimraf": "^0.1.1",
+    "gulp-webserver": "^0.9.0",
+    "install": "^0.1.8",
+    "npm": "^2.4.1"
+  }
+}
