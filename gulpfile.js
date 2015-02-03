@@ -60,7 +60,8 @@ gulp.task('css', function() {
     .pipe(compass({
       css: 'src/css',
       sass: 'src/sass',
-      image: 'src/img'
+      image: 'src/img',
+      includePaths: ['bower_components/foundation/scss']
     }))
     .pipe(concat('styles.css'))
     .pipe(autoprefix('last 2 versions'))
@@ -97,13 +98,10 @@ gulp.task('copy', function() {
     .pipe(gulp.dest('./build/'));
 });
 
-// Build task for deployment
-gulp.task('build', ['imagemin', 'htmlpage', 'scripts', 'css', 'copy']);
 
-// default gulp task
-gulp.task('default', ['imagemin', 'htmlpage', 'scripts', 'css', 'server'], function() {
+gulp.task('watch' function(){
 
-    // watch for HTML changes
+      // watch for HTML changes
   gulp.watch('./src/*.html', function() {
     gulp.run('htmlpage');
   });
@@ -119,4 +117,12 @@ gulp.task('default', ['imagemin', 'htmlpage', 'scripts', 'css', 'server'], funct
   });
 
 });
+
+
+
+// Build task for deployment
+gulp.task('build', ['imagemin', 'htmlpage', 'scripts', 'css', 'copy']);
+
+// default gulp task
+gulp.task('default', ['imagemin', 'htmlpage', 'scripts', 'css', 'watch', 'server']);
 
